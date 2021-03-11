@@ -25,6 +25,18 @@
         android:id="@+id/profileFragment"
         android:name="com.example.mynavcomponent.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile">
+
+        <argument
+            android:name="full_name"
+            app:argType="string"
+            android:defaultValue="Kosong" />
+
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Kosong" />
+
+    </fragment>
 
 </navigation>

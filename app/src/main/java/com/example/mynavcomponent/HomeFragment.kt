@@ -28,11 +28,11 @@ class HomeFragment : Fragment() {
 
         tvWelcome.text = getString(R.string.welcome, "Mochammad Naufal Rizaldi")
         btnProfile.setOnClickListener {
-            val bundle = bundleOf(
-                "full_name" to "Mochammad Naufal Rizaldi",
-                "username" to "naufalrzld"
+            val action = HomeFragmentDirections.actionHomeFragmentToProfileFragment(
+                "Mochammad Naufal Rizaldi",
+                "naufalrzld"
             )
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment, bundle)
+            findNavController().navigate(action)
         }
     }
 }
