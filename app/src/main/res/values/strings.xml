@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">MyNavComponent</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="masuk">Masuk</string>
+    <string name="login_sub_title">Silakan masuk dengan akun yang sudah Anda daftarkan.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="register_sub_title">Daftarkan akun Anda agar bisa menikmati layanan yang kami berikan.</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="welcome">Welcome, <b>%s</b></string>
+    <string name="profile">Profile</string>
 </resources>

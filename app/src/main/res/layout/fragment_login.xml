@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailFragment">
+    tools:context=".login.LoginFragment">
 
     <TextView
         android:id="@+id/tv_login_title"
@@ -99,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_daftar"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
