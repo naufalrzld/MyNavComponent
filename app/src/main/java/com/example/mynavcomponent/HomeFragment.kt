@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -22,11 +21,12 @@ class HomeFragment : Fragment() {
 
         val btnNavigate = view.findViewById<Button>(R.id.btn_navigate)
         btnNavigate.setOnClickListener {
-            val data = bundleOf(
-                "name" to "Mochammad Naufal Rizaldi",
-                "message" to "Belajar NavComponent"
-            )
-            findNavController().navigate(R.id.action_homeFragment_to_detailFragment, data)
+            val action = HomeFragmentDirections
+                    .actionHomeFragmentToDetailFragment(
+                        "Mochammad Naufal Rizaldi",
+                        "Belajar NavComponent"
+                    )
+            findNavController().navigate(action)
         }
     }
 }
