@@ -1,13 +1,12 @@
 package com.example.mynavcomponent
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment() {
@@ -23,7 +22,11 @@ class HomeFragment : Fragment() {
 
         val btnNavigate = view.findViewById<Button>(R.id.btn_navigate)
         btnNavigate.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
+            val data = bundleOf(
+                "name" to "Mochammad Naufal Rizaldi",
+                "message" to "Belajar NavComponent"
+            )
+            findNavController().navigate(R.id.action_homeFragment_to_detailFragment, data)
         }
     }
 }
