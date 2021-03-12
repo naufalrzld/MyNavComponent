@@ -13,18 +13,14 @@
 
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:destination="@id/detailFragment" />
 
     </fragment>
 
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.mynavcomponent.ProfileFragment"
+        android:id="@+id/detailFragment"
+        android:name="com.example.mynavcomponent.DetailFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_detail" />
 
 </navigation>

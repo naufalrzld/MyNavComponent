@@ -21,18 +21,9 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        requireActivity().title = getString(R.string.app_name)
-
-        val tvWelcome = view.findViewById<TextView>(R.id.tv_welcome)
-        val btnProfile = view.findViewById<Button>(R.id.btn_profile)
-
-        tvWelcome.text = getString(R.string.welcome, "Mochammad Naufal Rizaldi")
-        btnProfile.setOnClickListener {
-            val bundle = bundleOf(
-                "full_name" to "Mochammad Naufal Rizaldi",
-                "username" to "naufalrzld"
-            )
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment, bundle)
+        val btnNavigate = view.findViewById<Button>(R.id.btn_navigate)
+        btnNavigate.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
         }
     }
 }
